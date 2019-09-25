@@ -23,6 +23,9 @@ namespace Calculadora
         public MainWindow()
         {
             InitializeComponent();
+            operador1TextBox.Text = "0";
+            operador2TextBox.Text = "0";
+            resultadoTextBox.Text = "0";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -32,10 +35,6 @@ namespace Calculadora
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            operador1TextBox.Text = "0";
-            operador2TextBox.Text = "0";
-            resultadoTextBox.Text = "0";
-
             if (divisonRadioButton.IsChecked == true && operador1TextBox.Text == "0" && operador2TextBox.Text == "0")
                 resultadoTextBox.Text = "Error";
         }
@@ -51,6 +50,9 @@ namespace Calculadora
 
             if (sumaRadioButton.IsChecked == true)
                 resultado = int.Parse(operador1TextBox.Text) + int.Parse(operador2TextBox.Text);
+
+
+            resultadoTextBox.Text = resultado.ToString();
         }
     }
 }

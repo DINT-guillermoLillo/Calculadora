@@ -11,14 +11,14 @@
         <TextBlock HorizontalAlignment="Left" Margin="329,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.405" Height="21"><Run Text="Operador 1"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="329,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.405" Height="21"><Run Text="Operador 2"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="590,133,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.405"/>
-        <TextBox x:Name="operador1TextBox" HorizontalAlignment="Left" Height="23" Margin="329,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0" TextAlignment="Right" TextChanged="Operador1TextBox_TextChanged"/>
-        <TextBox x:Name="operador2TextBox" HorizontalAlignment="Left" Height="23" Margin="329,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0" TextAlignment="Right"/>
-        <TextBox x:Name="resultadoTextBox" HorizontalAlignment="Left" Height="23" Margin="590,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0" TextAlignment="Right" IsEnabled="False" TextChanged="ResultadoTextBox_TextChanged"/>
+        <TextBox x:Name="operador1TextBox" HorizontalAlignment="Left" Height="23" Margin="329,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Right" TextChanged="Operador1TextBox_TextChanged"/>
+        <TextBox x:Name="operador2TextBox" HorizontalAlignment="Left" Height="23" Margin="329,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Right" TextChanged="Operador1TextBox_TextChanged"/>
+        <TextBox x:Name="resultadoTextBox" HorizontalAlignment="Left" Height="23" Margin="590,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Right" IsEnabled="False" TextChanged="ResultadoTextBox_TextChanged"/>
         <GroupBox x:Name="divisonRadioButton1" Header="Operaciones" HorizontalAlignment="Left" Height="136" VerticalAlignment="Top" Width="128" Margin="58,74,0,0"/>
         <RadioButton Content="Resta" HorizontalAlignment="Left" Margin="76,120,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton Content="Multiplicación" HorizontalAlignment="Left" Margin="76,142,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton x:Name="divisonRadioButton" Content="División" HorizontalAlignment="Left" Margin="76,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.537,-1.53" Checked="RadioButton_Checked"/>
-        <RadioButton x:Name="sumaRadioButton" Content="Suma" HorizontalAlignment="Left" Margin="76,99,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="sumaRadioButton" Content="Suma" HorizontalAlignment="Left" Margin="76,99,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" IsChecked="True"/>
 
     </Grid>
 </Window>
