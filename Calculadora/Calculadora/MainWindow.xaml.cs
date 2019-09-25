@@ -26,6 +26,7 @@ namespace Calculadora
             operador1TextBox.Text = "0";
             operador2TextBox.Text = "0";
             resultadoTextBox.Text = "0";
+            sumaRadioButton.IsChecked = true;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,10 +47,10 @@ namespace Calculadora
 
         private void Operador1TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            int resultado = 0;
+            double resultado = 0;
 
-            if (sumaRadioButton.IsChecked == true)
-                resultado = int.Parse(operador1TextBox.Text) + int.Parse(operador2TextBox.Text);
+            if (sumaRadioButton.IsChecked == true && operador1TextBox.Text != "" && operador2TextBox.Text != "")
+                resultado = double.Parse(operador1TextBox.Text) + double.Parse(operador2TextBox.Text);
 
 
             resultadoTextBox.Text = resultado.ToString();
